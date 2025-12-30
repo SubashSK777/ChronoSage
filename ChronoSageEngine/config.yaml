@@ -1,0 +1,54 @@
+project:
+  name: "ChronoSage"
+  version: "1.0.0"
+  description: "Predictive Intelligence Engine with Causal Modeling"
+
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  sample_path: "data/sample"
+  supported_formats: ["csv", "json"]
+  
+ingestion:
+  auto_detect_types: true
+  handle_missing: "drop"
+  date_columns: []
+  categorical_columns: []
+  numerical_columns: []
+
+causal_model:
+  method: "dowhy"
+  discovery_algorithm: "pc"
+  confidence_level: 0.95
+  bootstrap_iterations: 100
+  min_sample_size: 100
+  graph_output: "models/causal_graph.pkl"
+  
+simulation:
+  max_iterations: 1000
+  convergence_threshold: 0.001
+  scenario_batch_size: 10
+  output_path: "data/processed/simulations"
+
+automation:
+  log_level: "INFO"
+  log_path: "logs"
+  retry_attempts: 3
+  retry_delay: 5
+  enable_monitoring: true
+  
+api:
+  host: "0.0.0.0"
+  port: 5000
+  reload: true
+  workers: 1
+  
+dashboard:
+  title: "ChronoSage - Predictive Intelligence Dashboard"
+  theme: "bootstrap"
+  update_interval: 5000
+  
+monitoring:
+  enable_drift_detection: true
+  drift_threshold: 0.1
+  health_check_interval: 60

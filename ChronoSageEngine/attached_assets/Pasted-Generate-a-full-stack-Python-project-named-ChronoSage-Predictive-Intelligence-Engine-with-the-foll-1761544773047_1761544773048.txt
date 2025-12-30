@@ -1,0 +1,64 @@
+Generate a full-stack Python project named ChronoSage – Predictive Intelligence Engine with the following specifications:
+
+1. Project Structure:
+
+ChronoSage/
+├─ data/                  # Raw and processed data
+├─ notebooks/             # Exploratory analysis & testing
+├─ src/
+│  ├─ ingestion.py        # Automated data ingestion & preprocessing
+│  ├─ causal_model.py     # Causal graph construction & training
+│  ├─ simulation.py       # “What-if” scenario engine
+│  ├─ automation.py       # Pipeline scheduling, logging, error handling
+│  ├─ visualization.py    # Dashboard & plot templates
+│  ├─ api.py              # FastAPI endpoints for simulations
+│  └─ utils.py            # Helper functions & constants
+├─ tests/                 # Unit tests for each module
+├─ requirements.txt       # Python dependencies
+├─ Dockerfile             # Optional containerization
+├─ README.md              # Documentation & usage
+└─ config.yaml            # Pipeline & model configuration
+
+2. Functional Requirements:
+
+Data Layer: Automated ingestion from CSV, JSON, or APIs; preprocessing with Pandas; versioning using DVC or MLflow.
+
+Causal Modeling: Construct causal graphs (manual + automated discovery) using DoWhy or CausalNex. Train models, validate causal relationships, and enable counterfactual simulations.
+
+Simulation Engine: Input hypothetical scenarios, propagate changes through causal graph, generate predictions.
+
+Automation: Schedule pipelines with Airflow or Prefect; logging, error handling, retry logic; dynamic retraining on new data.
+
+Visualization: Interactive dashboards using Plotly or Dash; scenario comparison charts; export to CSV/Excel.
+
+API: FastAPI endpoints to receive scenario input and return predicted outcomes.
+
+Monitoring: Model drift detection, pipeline health checks, alerting.
+
+Documentation: README explaining assumptions, variable definitions, workflow.
+
+Optional Enhancements: Web UI, cloud deployment (serverless or Docker), role-based access control.
+
+
+3. Code Requirements:
+
+Modular, scalable, production-ready.
+
+Logging and error handling in all scripts.
+
+Unit tests for each module.
+
+Example pipeline execution script (run_pipeline.py).
+
+Include sample dataset in data/sample/ for testing.
+
+
+4. Deliverables:
+
+Full project structure with working scripts.
+
+Ready-to-launch dashboards and API.
+
+Automated pipeline scripts.
+
+Documentation

@@ -1,0 +1,6 @@
+2025-10-27 06:10:01,462 - ChronoSage - INFO - Logging initialized. Log file: logs/chronosage_20251027_061001.log
+2025-10-27 06:10:01,463 - ChronoSage.Ingestion - INFO - DataIngestion module initialized
+2025-10-27 06:10:01,463 - ChronoSage.CausalModel - INFO - CausalGraphBuilder initialized
+2025-10-27 06:10:01,463 - ChronoSage.Simulation - INFO - ScenarioSimulator initialized
+2025-10-27 06:10:01,463 - ChronoSage.Automation - INFO - Pipeline initialized successfully
+2025-10-27 06:10:01,463 - ChronoSage.Automation - INFO - MonitoringService initialized
